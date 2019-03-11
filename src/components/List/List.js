@@ -8,6 +8,8 @@ const styles = {
         textAlign: 'center',
         margin: '0 auto',
         overflowY: 'scroll',
+        color:'#ccc',
+        fontSize:'20px'
     }
 }
 

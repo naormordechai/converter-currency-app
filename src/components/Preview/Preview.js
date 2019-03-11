@@ -4,7 +4,11 @@ import { AuthContextLeft } from '../../App';
 
 const styles = {
     active: {
-        fontWeight: '700'
+        fontWeight: '700',
+        color:'#000'
+    },
+    preview: {
+        borderBottom: '1px solid #000'
     }
 };
 
@@ -17,12 +21,12 @@ class Preview extends React.Component {
 
     render() {
         console.log('PREVIEW');
-        
+
         let marked = false
         const { country, side, countryNameActive, classes, setCountry } = this.props
         if (country.name === countryNameActive) marked = true
         return (
-            <div className={marked ? classes.active : null} onClick={() => setCountry(country, side)}>{country.name}</div>
+            <div className={`${marked ? classes.active : null} ${classes.preview}`} onClick={() => setCountry(country, side)}>{country.name}</div>
         )
     }
 }
