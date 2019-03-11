@@ -9,7 +9,7 @@ import Spinner from './components/UI/Spinner/Spinner';
 
 const styles = {
   container: {
-    background:'#4aa',
+    background:'#663',
     height: '100vh',
     textAlign: 'center',
     borderRadius: '5px',
